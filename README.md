@@ -75,5 +75,3 @@ if you're not Virgo or you don't need this annotation, add a property in your ``
     <property name="addRepositoryAnnotation" value="false"/>
 </plugin>
 ```
-
-## 稍后我会提供example(I'll upload a sample later)
