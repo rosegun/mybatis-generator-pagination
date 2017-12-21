@@ -19,7 +19,7 @@ aim to provide the simplest way to carry out physical pagination!!!
 <dependency>
     <groupId>com.rosegun</groupId>
     <artifactId>mybatis-generator-pagination</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 </dependency>
 ```
 
@@ -49,7 +49,7 @@ aim to provide the simplest way to carry out physical pagination!!!
         <dependency>
             <groupId>com.rosegun</groupId>
             <artifactId>mybatis-generator-pagination</artifactId>
-            <version>1.0.0</version>
+            <version>1.0.1</version>
         </dependency>
     </dependencies>
 </plugin>
