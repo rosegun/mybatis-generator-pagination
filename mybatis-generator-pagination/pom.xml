@@ -16,30 +16,6 @@
     <url>https://github.com/rosegun/mybatis-generator-pagination</url>
     <description>pagination plugin for mybatis generator</description>
 
-    <licenses>
-        <license>
-            <name>The Apache Software License, Version 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-        </license>
-    </licenses>
-
-    <developers>
-        <developer>
-            <name>qct</name>
-            <email>quchentao@163.com</email>
-            <roles>
-                <role>developer</role>
-            </roles>
-            <timezone>+8</timezone>
-        </developer>
-    </developers>
-
-    <scm>
-        <connection>scm:git:git@github.com:rosegun/mybatis-generator-pagination.git</connection>
-        <developerConnection>scm:git:git@github.com:rosegun/mybatis-generator-pagination.git</developerConnection>
-        <url>https://github.com/rosegun/mybatis-generator-pagination</url>
-    </scm>
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
