@@ -1,13 +1,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
     <parent>
         <groupId>com.rosegun</groupId>
         <artifactId>mybatis-generator-pagination-parent</artifactId>
-        <version>1.0</version>
+        <version>1.0.1</version>
+        <relativePath>../</relativePath>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>sample</artifactId>
+    <artifactId>mybatis-generator-pagination-sample</artifactId>
     <packaging>jar</packaging>
 
     <properties>
@@ -15,6 +17,7 @@
         <java.version>1.8</java.version>
 
         <mybatis-spring-boot-starter.version>1.3.0</mybatis-spring-boot-starter.version>
+        <spring-boot-dependencies.version>1.5.9.RELEASE</spring-boot-dependencies.version>
     </properties>
 
     <dependencyManagement>
@@ -23,7 +26,7 @@
                 <!-- Import dependency management from Spring Boot -->
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>1.5.4.RELEASE</version>
+                <version>${spring-boot-dependencies.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -34,7 +37,7 @@
         <dependency>
             <groupId>com.rosegun</groupId>
             <artifactId>mybatis-generator-pagination</artifactId>
-            <version>1.0</version>
+            <version>1.0.1</version>
         </dependency>
 
         <dependency>
@@ -64,7 +67,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>1.5.4.RELEASE</version>
+                <version>${spring-boot-dependencies.version}</version>
             </plugin>
             <plugin>
                 <groupId>org.mybatis.generator</groupId>
@@ -79,7 +82,6 @@
                     <dependency>
                         <groupId>mysql</groupId>
                         <artifactId>mysql-connector-java</artifactId>
-                        <version>5.1.42</version>
                     </dependency>
                     <dependency>
                         <groupId>org.mybatis.generator</groupId>
@@ -89,16 +91,18 @@
                     <dependency>
                         <groupId>com.rosegun</groupId>
                         <artifactId>mybatis-generator-pagination</artifactId>
-                        <version>1.0</version>
+                        <version>1.0.1</version>
                     </dependency>
                 </dependencies>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plugin.version}</version>
                 <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
                 </configuration>
             </plugin>
         </plugins>
